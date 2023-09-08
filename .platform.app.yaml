@@ -6,7 +6,12 @@ name: app
 
 # The runtime the application uses.
 # Complete list of available runtimes: https://docs.platform.sh/create-apps/app-reference.html#types
-type: nodejs:18
+type: nodejs:20
+build:
+  flavor: none
+hooks:
+  build: |
+    bun install
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -26,7 +31,7 @@ web:
   # More information: https://docs.platform.sh/create-apps/app-reference.html#web-commands
   commands:
     # The command to launch your app. If it terminates, it’s restarted immediately.
-    start: "node index.js"
+    start: "bun index.js"
 
 # Information on the app's source code and operations that can be run on it.
 # More information: https://docs.platform.sh/create-apps/app-reference.html#source
