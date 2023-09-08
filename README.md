@@ -1,7 +1,7 @@
-# Express for Platform.sh
+# Express on Bun 1.0 for Platform.sh
 
 <p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/express/.platform.template.yaml&utm_content=express&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://gist.githubusercontent.com/OriPekelman/1b19f464756919e0b26937092fb1eda1/raw/587427b37e040ac716290b56130db2ec4718f5aa/template.yaml&utm_content=express&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
 </a>
 </p>
@@ -12,7 +12,7 @@ Express is a minimalist web framework written in Node.js.
 
 ## Features
 
-* Node.js 14
+* Bun 1.0
 * MariaDB 10.4
 * Automatic TLS certificates
 * npm-based build
